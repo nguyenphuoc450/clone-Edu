@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Form Login-->
+    <div id="form-login">
+        <div class="container-login">
+            <h2>Login</h2>
+            <button type="button" class="btn-cancel" onclick="closeFormLogin()">Close</button>
+            <form action="">
+                <div class="inputBx">
+                    <span>Username</span>
+                    <input type="text">
+                </div>
+                <div class="inputBx">
+                    <span>Password</span>
+                    <input type="password">
+                </div>
+                <div class="remember">
+                    <label for=""><input type="checkbox"> Remember Me</label>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="inputBx">
+                    <p>Don't have an account? <a href="#" onclick="openFormRegister()">Register</a> </p>
+                </div>
+            </form>
+            <h3>Login with Social media</h3>
+            <ul class="social">
+                <li><img src="image/ic_fb.png" alt="" title="Facebook"></li>
+                <li><img src="image/ic_instagram.png" alt="" title="Instagram"></li>
+                <li><img src="image/ic_twitter.png" alt="" title="Twitter"></li>
+                <li><img src="image/ic_google.png" alt="" title="Google"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Form Register -->
+    <div id="form-register">
+        <div class="container-register">
+            <h2>Register</h2>
+            <button type="button" class="btn-cancel" onclick="closeFormRegister()">Close</button>
+            <form action="">
+                <div class="inputBx">
+                    <span>Username</span>
+                    <input type="text">
+                </div>
+                <div class="inputBx">
+                    <span>Password</span>
+                    <input type="password">
+                </div>
+                <div class="inputBx">
+                    <span>Confirm Password</span>
+                    <input type="password">
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="inputBx">
+                    <p>You have an account? <a href="#" onclick="openFormLogin()">Login</a> </p>
+                </div>
+            </form>
+            <h3>Login with Social media</h3>
+            <ul class="social">
+                <li><img src="image/ic_fb.png" alt="" title="Facebook"></li>
+                <li><img src="image/ic_instagram.png" alt="" title="Instagram"></li>
+                <li><img src="image/ic_twitter.png" alt="" title="Twitter"></li>
+                <li><img src="image/ic_google.png" alt="" title="Google"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <!-- Header top -->
+        <header class="header-top">
+            <div class="container-1">
+                <div class="list-top-left">
+                    <i class="fas fa-phone-alt"> 0123 456 789</i>
+                    <i class="fas fa-envelope"> abc@gmail.com</i>
+                </div>
+                <div class="list-top-right">
+                    <a href="#" onclick="openFormLogin()">Login</a>
+                    <a href="#" onclick="openFormRegister()">Register</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header Main -->
+        <header class="header-main">
+            <div class="container-logo">
+                <div class="header-logo">
+                    <a href="#"><img src="image/logo.png" alt=""></a>
+                </div>
+                <div class="header-navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a>
+                            <div class="menu-dropdown">
+                                <ul>
+                                    <li><a href="#">Courses 1</a></li>
+                                    <li><a href="#">Courses 2</a></li>
+                                    <li><a href="#">Courses 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Teachers</a>
+                            <div class="menu-dropdown">
+                                <ul>
+                                    <li><a href="#">Teacher 1</a></li>
+                                    <li><a href="#">Teacher 2</a></li>
+                                    <li><a href="#">Teacher 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Gallery</a>
+                            <div class="menu-dropdown">
+                                <ul>
+                                    <li><a href="#">Gallery 1</a></li>
+                                    <li><a href="#">Gallery 2</a></li>
+                                    <li><a href="#">Gallery 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </header>
+    
+
+    <!--Slideshow-->
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <a href="#"><img src="image/slideshow3.jpg" class="img_slideshow"></a>
+          </div>
+        
+          <div class="mySlides fade">
+            <a href="#"><img src="image/slideshow2.jpg" class="img_slideshow"></a>
+          </div>
+          <div class="mySlides fade">
+            <a href="#"><img src="image/slideshow1.jpg"  class="img_slideshow"></a>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <script src="js/slideshow.js"></script>
+
+    <!-- Section Card-Group-1 -->
+    <section class="card-group-1">
+        <div class="container-2">
+            <div class="block-title">
+                <h2 class="line-default">COURSE CATEGORIES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore</p>
+            </div>
+            <div class="container-card">
+                <div class="card">
+                    <img src="image/card_1.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Programming</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consect etrttur ading labo</p>
+                        <a href="#" class="card-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image/card_2.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Graphic & Design</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consect etrttur adipising labor</p>
+                        <a href="#" class="card-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image/card_3.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Seo & Marketing</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consect etrttur adipising labo</p>
+                        <a href="#" class="card-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Card-Group-2 -->
+    <section class="card-group-2">
+        <div class="container-2">
+            <div class="block-title">
+                <h2 class="line-default">WHY CHOOSE US</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna</p>
+            </div>
+            <div class="content-card-group-2">
+                <div class="column-img">
+                    <img src="image/4.png" alt="">
+                </div>
+                <div class="column-media">
+                    <div class="media">
+                        <div class="media-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>10 years of experience</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna aliqua uat veniama icing eli</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Over 1000 lessons</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna aliqua uat veniama icing eli</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                            <div class="media-icon">
+                                <i class="far fa-life-ring"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3>Easy to learning</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna aliqua uat veniama icing eli</p>
+                            </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3>Trust by 5,000 students</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna aliqua uat veniama icing eli</p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Background-Quote -->
+    <section class="bg-quote">
+        <div class="quote">
+            <div class="quote_content">
+                <div class="body-quote">
+                    <p class="quote-text">" Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore magna aliqua uat veniama "</p>
+                    <p class="quote-author">-Laura Simis</p>
+                </div>
+            </div>
+            <div class="img-quote">
+                <img src="image/5.jpg" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Section Card-Group-Teacher -->
+    <section class="card-group-teacher">
+        <div class="container-2">
+            <div class="block-title">
+                <h2 class="line-default">OUR TEACHERS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore</p>
+            </div>
+            <div class="container-card">
+                <div class="card-teacher">
+                    <img src="image/teacher1.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Teacher 1</h4>
+                        <p class="card-text">Client Services</p>
+                    </div>
+                </div>
+                <div class="card-teacher">
+                    <img src="image/teacher2.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Teacher 2</h4>
+                        <p class="card-text">Client Services</p>
+                    </div>
+                </div>
+                <div class="card-teacher">
+                    <img src="image/teacher3.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Teacher 3</h4>
+                        <p class="card-text">Client Services</p>
+                    </div>
+                </div>
+                <div class="card-teacher">
+                    <img src="image/teacher4.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Teacher 4</h4>
+                        <p class="card-text">Client Services</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section Join US -->
+    <section class="join-us"> 
+        <div class="container-2">
+            <div class="block-title">
+                <h2 class="line-default-2" style="color: #fff;">JOIN OUR NEWSLETTER</h2>
+                <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing labore et dolore</p>
+            </div>
+            <form action="" class="form-subscribe">
+                <input type="text" placeholder="Enter your email" class="input-subscribe">
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+            <div class="img-join-us">
+                <img src="image/6.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-3">
+            <div class="container-column">
+                <div class="column-footer column-big">
+                    <h3>Contact</h3>
+                    <p>Lorem ipsum dolor sit amet consectetrttur adipisicing labore et trtdol</p>
+                    <p>100 Madison St., Alexandria, VA, US</p>
+                    <p>123 456-7890</p>
+                    <p>info@example.com</p>
+                </div>
+                <div class="column-footer">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Teachers</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">FQAs</a></li>
+                        <li><a href="#">Help center</a></li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <h3>Commulity</h3>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="column-footer column-big">
+                    <h3>Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet consectetrttur adipisicing labore et trtdol</p>
+                    <form action="" class="form-footer">
+                        <input type="text" placeholder="Enter your email" class="input-footer">
+                        <a href="#" class="btn-footer">Subcrise</a>    
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-2">
+                <p class="footer-bottom-text">2020 Designed by <a href="#"> IceTeaSolutions</a> .All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
